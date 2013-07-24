@@ -42,6 +42,7 @@
             Assert.Equal(@"<html><head></head><body>Hey Bob! Bye!</body></html>", output);
         }
 
+
         [Fact]
         public void Should_replace_primitive_model_with_value()
         {

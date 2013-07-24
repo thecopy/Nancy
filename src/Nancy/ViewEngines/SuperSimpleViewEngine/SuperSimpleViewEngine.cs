@@ -38,7 +38,7 @@ namespace Nancy.ViewEngines.SuperSimpleViewEngine
         /// Compiled Regex for if blocks
         /// </summary>
         private const string ConditionalOpenSyntaxPattern = @"@If(?<Not>Not)?(?<Null>Null)?(?:\.(?<ModelSource>(Model|Context)+))?(?:\.(?<ParameterName>[a-zA-Z0-9-_]+))+;?";
-        private const string ConditionalOpenInnerSyntaxPattern = @"@If(?<Not>Not)?(?<Null>Null)?(?:\.(?<ModelSource>(Model|Context)+))?(?:\.(?<ParameterNameInner>[a-zA-Z0-9-_]+))+;?";
+        private const string ConditionalOpenInnerSyntaxPattern = @"@If(?:Not)?(?:Null)?(?:\.(?:(Model|Context)+))?(?:\.(?:[a-zA-Z0-9-_]+))+;?";
         private const string ConditionalCloseStynaxPattern = @"@EndIf;?";
          
         private static readonly string ConditionalSubstituionPattern =
